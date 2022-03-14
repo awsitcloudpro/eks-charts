@@ -32,5 +32,7 @@ helm upgrade --install aws-cloudwatch-metrics \
 | `nodeSelector` | Node labels for pod assignment	 | {} | 
 | `tolerations` | Optional deployment tolerations	 | {} | 
 | `annotations` | Optional pod annotations	 | {} | 
+| `deployAsDaemonset` | If `false`, a deployment is created instead of a daemonset | `true` | 
+| `replicas` | Number of pod replicas. Effective only if deployAsDaemonset is `false` | `1` | 
 | `config` | Configuration for CloudWatch agent	 | See [values.yaml](./values.yaml) | ✔
 | `prometheusConfig` | Prometheus configuration for CloudWatch agent	 | {} | 

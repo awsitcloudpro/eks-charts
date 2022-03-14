@@ -25,6 +25,12 @@ tolerations: []
 
 affinity: {}
 
+# If false, a K8s Deployment will be created instead of daemonset
+deployAsDaemonset: true
+
+# This is effective only when deployAsDaemonset is false
+replicas: 1
+
 config:
   cwagentconfig.json: |
     {
