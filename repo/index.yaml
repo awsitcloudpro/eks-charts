@@ -3,9 +3,9 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: "1.247350"
-    created: "2022-03-11T17:54:32.716041-05:00"
+    created: "2022-03-14T12:26:29.14882-04:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
-    digest: 9946dc7df231e30ae83b75cff32ac10682942cc9e0f8a1892292f691af998e9b
+    digest: 448e4e696e7cd3058de63da8ab1dc7560e3455ceda4778ff7c7d82560159f503
     home: https://github.com/aws/eks-charts
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -19,4 +19,4 @@ entries:
     urls:
     - aws-cloudwatch-metrics-0.0.7.tgz
     version: 0.0.7
-generated: "2022-03-11T17:54:32.715256-05:00"
+generated: "2022-03-14T12:26:29.148179-04:00"
