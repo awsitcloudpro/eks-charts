@@ -1,11 +1,12 @@
-{{- if .Values.deployAsDaemonset -}}
+{{- if not .Values.deployAsDaemonset -}}
 apiVersion: apps/v1
-kind: DaemonSet
+kind: Deployment
 metadata:
   name: {{ include "aws-cloudwatch-metrics.fullname" . }}
   labels:
     {{- include "aws-cloudwatch-metrics.labels" . | nindent 4 }}
 spec:
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       {{- include "aws-cloudwatch-metrics.selectorLabels" . | nindent 6 }}
